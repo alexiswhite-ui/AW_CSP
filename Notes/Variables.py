@@ -1,0 +1,3 @@
+name = "Goose"
+
+print(name)
