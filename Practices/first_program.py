@@ -1,21 +1,12 @@
  # AW First Program
 
-sport = "Volleyball"
+name = input("What is your favorite color:")
 
-time = 2
+color = "I love"
 
-enjoyment = "intermidaite"
+after = "too, great choice!"
 
-what_day = "tuesday and thursday"
 
-statement = "I have practice for"
+print(color, name, after)
 
-word = "with"
 
-pleasure = "enjoyment"
-
-another_word = "for"
-
-time_word = "hours"
-
-print(statement, sport, what_day, word, enjoyment, pleasure, another_word, time, time_word)
