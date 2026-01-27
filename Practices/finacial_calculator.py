@@ -20,3 +20,4 @@ print("your groceries are $", food, "and that is", (food/income)*100, "% of your
 
 print("your transportations are $", car, "and that is", (car/income)*100, "% of your income")
 
+print("you have $"())
