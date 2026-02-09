@@ -40,7 +40,7 @@ car = payment("transpertation: ")
 
 cost = payment (income, {payment})
 
-def percnet(cost*income/100):
-    return float(f"which is {amount}% of your income")
+def percent(amount):
+    return float(f"which is {cost*payment/100}% of your income")
 
-print("Your monthly {cost} is {amount}5 of your monthly income")
+print("Your monthly {cost} {amount}")
