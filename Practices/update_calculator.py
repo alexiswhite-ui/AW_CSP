@@ -44,3 +44,4 @@ def percent(amount):
     return float(f"which is {cost*payment/100}% of your income")
 
 print("Your monthly {cost} {amount}")
+
