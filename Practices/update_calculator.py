@@ -37,12 +37,21 @@ rent = payment("rent: ")
 utilities = payment("utilities: ")
 food = payment("food: ")
 car = payment("transpertation: ")
+savings = income/10
+total = car + food + utilities + rent + savings
 
-cost = payment (income, {payment})
 
 def percent(amount):
-    return float(f"which is {cost*payment/100}% of your income")
+    return round(amount/income*100)
 
-print("Your monthly {cost} {amount}")
-print()
+print("Your rent is $", rent, "and that is", percent(rent), "% of your income.")
 
+print("Your utilities is $", utilities, "and that is", round(utilities/income*100), "% of your monthly income.")
+
+print("Your food is $", food, "and that is", round(food/income*100), "% of your monthly income.")
+
+print("Your transpertation is $", car, "and that is", round(car/income*100), "% of your monthly income.")
+
+print("You shoudl save $",savings,", this is 10%of your monthly income.")
+
+print("You will have $", income-total, "to use as spending money each month!")
