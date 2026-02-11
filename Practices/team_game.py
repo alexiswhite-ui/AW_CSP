@@ -14,23 +14,30 @@ def guess(letter):
 print(guess().random) 
 
 '''
+import random #number 1,2,3,4,5,6,7,8,9
+
+
+selection = random
 
 number = [1,2,3,4,5,6,7,8,9]
-    
-print(f" {number[0]} | {number[1]} | {number[2]} ")
-print(f"---+---+---")
-print(f" {number[3]} | {number[4]} | {number[5]}")
-print(f"---+---+---")
-print(f" {number[6]} | {number[7]} | {number[8]} ")
+
+def board():
+    print(f" {number[0]} | {number[1]} | {number[2]} ")
+    print(f"---+---+---")
+    print(f" {number[3]} | {number[4]} | {number[5]}")
+    print(f"---+---+---")
+    print(f" {number[6]} | {number[7]} | {number[8]} ")
+
+board()
 
 x = int(input("Pick a number to place the X: "))
 
-number[x-1] = "X"
 
-print(f" {number[0]} | {number[1]} | {number[2]} ")
-print(f"---+---+---")
-print(f" {number[3]} | {number[4]} | {number[5]}")
-print(f"---+---+---")
-print(f" {number[6]} | {number[7]} | {number[8]} ")
+board()
 
-while 
+
+
+number[random] = "O"
+
+board()
+
