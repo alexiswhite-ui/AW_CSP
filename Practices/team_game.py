@@ -30,14 +30,19 @@ def board():
 
 board()
 
-x = int(input("Pick a number to place the X: "))
 
+def player():
+    x = int(input("Pick a number to place the X: "))
+    number[x-1] = "X"
+    board()
+    return
 
-board()
+def computer():
+    o = random.randint(1,9)
+    number[o-1] = "O"
+    board()
 
-
-
-number[random] = "O"
-
-board()
-
+while number:
+    player()
+    print("The computers turn")
+    computer()
