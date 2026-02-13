@@ -36,22 +36,16 @@ def player():
     x = int(input("Pick a number to place the X 1-9: "))
     number[x-1] = "X"
     board()
-    check_win()
 
 def computer():
     o = random.randint(1,9)
     number[o-1] = "O"
     board()
-    check_win()
 
 
 while number:
     player()
     print("The computers turn")
     computer()
-    check_win()
 
 
-
-def get_bot_move(board):
-    possible_moves = [i for i,x in enumerate(board)]
