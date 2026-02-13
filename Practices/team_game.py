@@ -31,18 +31,24 @@ def board():
 board()
 
 
+
 def player():
-    x = int(input("Pick a number to place the X: "))
+    x = int(input("Pick a number to place the X 1-9: "))
     number[x-1] = "X"
     board()
-    return
+    check_win()
 
 def computer():
     o = random.randint(1,9)
     number[o-1] = "O"
     board()
+    check_win()
+
 
 while number:
     player()
     print("The computers turn")
     computer()
+    check_win()
+
+
