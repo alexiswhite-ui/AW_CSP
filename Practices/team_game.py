@@ -52,3 +52,6 @@ while number:
     check_win()
 
 
+
+def get_bot_move(board):
+    possible_moves = [i for i,x in enumerate(board)]
