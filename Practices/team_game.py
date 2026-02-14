@@ -1,19 +1,6 @@
 # AW p7 team game
 
-'''import random #4 letter word
-print("  ------")
-print("  |     |")
-print("  |")
-print("  |")
-print("  |")
-print("  |")
-print("_____")
 
-def guess(letter):
-    return f"{letter}"
-print(guess().random) 
-
-'''
 import random #number 1,2,3,4,5,6,7,8,9
 
 
