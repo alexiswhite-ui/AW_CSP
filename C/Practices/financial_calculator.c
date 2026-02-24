@@ -12,30 +12,30 @@ int main(){
 
     float utilities;
     printf("What is your monthly utilities: ");
-    scanf("%f", utilities);
+    scanf("%f", &utilities);
 
     float groceries;
     printf("What is your monthly groceries: ");
-    scanf("%f", groceries);
+    scanf("%f", &groceries);
 
     float transport;
-    printf("What is your monthly utilities: ");
-    scanf("%f", transport);
+    printf("What is your monthly transportation: ");
+    scanf("%f", &transport);
 
-    int morgage = (income/rent*100);
-    int bill = (income/utilities*100);
-    int food = (income/groceries*100);
-    int car = (income/transport*100);
+    int morgage = (rent/income*100);
+    int bill = (utilities/income*100);
+    int food = (groceries/income*100);
+    int car = (transport/income*100);
 
     
 
-    printf("Your rent is %f which is %.1d of your income\n", rent, morgage);
+    printf("Your rent is %.2f which is %.1d percent of your income\n", rent, morgage);
 
-    printf("Your utilities is %f which is %.1d of your income\n", utilities, bill);
+    printf("Your utilities is %.2f which is %.1d percent of your income\n", utilities, bill);
 
-    printf("Your groceries is %f which is %.1d of your income", groceries, food);
+    printf("Your groceries is %.2f which is %.1d percent of your income\n", groceries, food);
 
-    printf("Your transportation is %f which is %.1d of your income", transport, car);
+    printf("Your transportation is %.2f which is %.1d percent of your income", transport, car);
 
     return 0;
     
