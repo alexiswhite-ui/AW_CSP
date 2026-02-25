@@ -1,5 +1,5 @@
 // AW p7 first program
-#include <studio.h>
+#include <stdio.h>
 
 int main(){
     printf("Enter in your name: ");
