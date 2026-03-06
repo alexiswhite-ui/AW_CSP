@@ -1,31 +1,37 @@
 // AW p7 updated financial calculator
 #include <stdio.h>
 
+ float payment (char* cost){
+    float monthly;
+    printf("what is your monthly %s", cost);
+    scanf("%f", &monthly);
+    return monthly;
+  }
+  float income;
+  float rent;
+  float utilities;
+  float groceries;
+  float transport;
+
+float percent(){
+    
+}
+int morgage = (rent/income*100);
+int bill = (utilities/income*100);
+int food = (groceries/income*100);
+int car = (transport/income*100);
+
 int main(){
-    float income;
-    printf("What is your monthly income:");
-    scanf("%f", &income);
+    income = payment("income:");
+    
+    rent = payment("rent/morgage: ");
+    
+    utilities = payment("utilities: ");
 
-    float rent;
-    printf("What is your monthly rent/morgage:");
-    scanf("%f", &rent);
+    groceries = payment("groceries ");
 
-    float utilities;
-    printf("What is your monthly utilities: ");
-    scanf("%f", &utilities);
+    transport = payment("transportation: ");
 
-    float groceries;
-    printf("What is your monthly groceries: ");
-    scanf("%f", &groceries);
-
-    float transport;
-    printf("What is your monthly transportation: ");
-    scanf("%f", &transport);
-
-    int morgage = (rent/income*100);
-    int bill = (utilities/income*100);
-    int food = (groceries/income*100);
-    int car = (transport/income*100);
 
     
 
