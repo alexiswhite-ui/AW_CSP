@@ -7,6 +7,8 @@
 
 char number[] = {'1','2','3','4','5','6','7','8','9'};
 
+ // AW: function to print playing board
+
 void board() {
     printf(" %c | %c | %c \n", number[0], number[1], number[2]);
     printf("---+---+---\n");
@@ -14,6 +16,8 @@ void board() {
     printf("---+---+---\n");
     printf(" %c | %c | %c \n", number[6], number[7], number[8]);
 }
+
+// AW & GLG: the platers move 
 
 int player() {
     while (true) {
@@ -37,6 +41,8 @@ int player() {
     }
 }
 
+// AW: the move that the computer makes on the board
+
 int computer() {
     int o;
 
@@ -51,6 +57,7 @@ int computer() {
         }
     }
 }
+ // GLG: to determine if the number combos are winning
 
 bool check_winner(char p) {
     int wins[8][3] = {
@@ -72,11 +79,15 @@ bool check_winner(char p) {
     return false;
 }
 
+// GLG: reseting the board after playing 
+
 void reset_board() {
     for (int i = 0; i < 9; i++) {
         number[i] = '1' + i;
     }
 }
+
+// AW & GLG: main function to put all others together and print out the winning or loosing statements
 
 int main() {
     srand(time(NULL));
@@ -102,7 +113,7 @@ int main() {
             }
         }
 
-        printf("Good job! Would you like to play again? (yes/no): ");
+        printf("Good job! Would you like to play again? (yes/no): \n");
         scanf("%s", again);
 
     } while (strcmp(again, "yes") == 0);
