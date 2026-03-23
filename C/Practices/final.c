@@ -29,7 +29,6 @@ int player() {
             printf("Choose only numbers 1–9 please!\n");
             continue;
         }
-
         if (number[move-1] == 'X' || number[move-1] == 'O') {
             printf("Spot is already taken, pick something new!\n");
             continue;
