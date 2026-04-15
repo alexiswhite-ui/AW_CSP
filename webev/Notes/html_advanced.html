@@ -3,6 +3,35 @@
     <head>
         <title>Notes about advanced html</title>
         <meta charset="UTF-8"/>
+        <!--Embeded style sheets go inside the head tag-->
+        <style>
+            *{
+                background-color: rgb(255, 50, 0);
+            }
+            img{
+                border: 4px inset orange;
+                width: 50%;
+            }
+            #unordered{
+                font-family: fantasy;
+            }
+            #ordered{
+                color: teal;
+                background-color:brown
+            }
+            .odd{
+                background-color: grey;
+                color: brown;
+            }
+            p{
+                background-color: red;
+                color: #66ef26;
+                color: white;
+            }
+            h1{
+                text-align: center;
+            }
+        </style>
     </head>
 
     <body>
@@ -14,25 +43,25 @@
         <div id="ordered">
             <p> This is how we make an ordered (numbered list)</p>
             <ol>
-                <li>Computer Science Priciplas</li>
+                <li class="odd">Computer Science Priciplas</li>
                 <li>Computer programming 1</li>
-                <li>Advanced computer programming</li>
+                <li class="odd">Advanced computer programming</li>
             </ol>
         </div>
 
-        <div id="unordered" style="font-family:Georgia, 'Times New Roman', Times, serif;">
+        <div id="unordered" >
             <p>This is how you make an unordered (bulleted) list</p>
                 <ul style="list-style-type: circle;">
-                    <li>Apple</li>
+                    <li class="odd">  Apple</li>
                     <li>Orange</li>
-                    <li>Banana</li>
+                    <li class="odd">Banana</li>
                     <li>peach</li>
                 </ul>
         </div>
 
         <a href="https://docs.google.com/document/d/14tXLXszdFjRRi6amX75u5ZRHK0dVX6F_rmJcx9nskL0/edit?tab=t.jz5kzmbwxava" target="_blank"> W3Schools unordered list page</a>
 
-        <img src="https://i.pinimg.com/736x/01/11/19/01111977943597a8fac078cb6db2f109.jpg" alt="Paint barrel horse" height="200px"/>
+        <img src="https://i.pinimg.com/736x/01/11/19/01111977943597a8fac078cb6db2f109.jpg" alt="Paint barrel horse" />
     </body>
 
 </html>
