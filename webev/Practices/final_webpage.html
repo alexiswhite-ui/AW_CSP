@@ -40,12 +40,39 @@
                 background-color: black;
                 color: whitesmoke;
                 width: 200px;
+
                 
                 justify-self: left;
+                
                 
             }
 
         </style>
+
+        <script>
+            function facts(){
+                if(document.getElementById("funfacts").style.display == "block"){
+                    document.getElementById("funfacts").style.display = "none"
+                }
+                else{
+                    document.getElementById("funfacts").style.display = "block"
+                }
+
+            }
+
+            let count = 0
+            let imgs = ["https://www.visitutah.com/azure/cmsroot/visitutah/media/site-assets/homepage-hero/dark-sky_south_bryce-canyon_thors-hammer_zajac-marcin_2023_bryc_lr.jpg?w=900&h=600&mode=crop&quality=65", "https://www.google.com/imgres?q=bryce%20canyon&imgurl=https%3A%2F%2Fwww.visitutah.com%2Fazure%2Fcmsroot%2Fvisitutah%2Fmedia%2Fsite-assets%2Fhomepage-hero%2Fdark-sky_south_bryce-canyon_thors-hammer_zajac-marcin_2023_bryc_lr.jpg%3Fw%3D900%26h%3D600%26mode%3Dcrop%26quality%3D65&imgrefurl=https%3A%2F%2Fwww.visitutah.com%2Fplaces-to-go%2Fparks-outdoors%2Fbryce-canyon&docid=pkoHkmtPF6ncPM&tbnid=iv1MqYbflxjWkM&vet=12ahUKEwimlszxtZaUAxWUJ0QIHbh9K4kQnPAOegQIaxAB..i&w=900&h=600&hcb=2&ved=2ahUKEwimlszxtZaUAxWUJ0QIHbh9K4kQnPAOegQIaxAB&safe=active&ssui=on", "https://www.google.com/imgres?q=bryce%20canyon&imgurl=https%3A%2F%2Fsweetours.com%2Fwp-content%2Fuploads%2F2025%2F06%2Fbryce-canyon-sunrise-hoodoos-sunrise-point.png&imgrefurl=https%3A%2F%2Fsweetours.com%2Fbryce-canyon-sunrise-sunset-photography-guide%2F&docid=s74sgatNqyGeUM&tbnid=HkYrZU7qadETGM&vet=12ahUKEwimlszxtZaUAxWUJ0QIHbh9K4kQnPAOegQIMRAB..i&w=1408&h=768&hcb=2&ved=2ahUKEwimlszxtZaUAxWUJ0QIHbh9K4kQnPAOegQIMRAB&safe=active&ssui=on"]
+            let img_count = 0
+            function change(original){
+                if (img_count >= imgs.length -1){
+                    img_count = 0
+                }else{
+                    img_count += 1
+                }
+                document.getElementById('original').src = imgs[img_count]
+            }
+        </script>
+
     </head>
 
     <body>
@@ -70,8 +97,11 @@
             <br><br>
             <div class="middle">
                 <h2><u>Family Fun</u></h2>
+
             </div>
         </div>
+
+        <img  onmouseover="change()" id = "original" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHzGWAh2WHsaiNzAr-Rdd5a7YUGaJmacIdwQ&s" alt="Bryce canyon picture"/>
 
         
     </body>
