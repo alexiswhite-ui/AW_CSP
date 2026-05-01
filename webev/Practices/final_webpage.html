@@ -22,12 +22,12 @@
                 width: 550px;
                 
             }
-            #align{
+            #align {
                 display: grid;
-                justify-self: left;
-                
-              
-            }
+                grid-template-columns: 200px 1fr;
+                grid-template-rows: auto; /* Items stack vertically */
+                gap: 20px;
+}
             #links{
                 color: whitesmoke;
                 font-style: underline;
@@ -103,7 +103,17 @@
 
         <img  onmouseover="change()" id = "original" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHzGWAh2WHsaiNzAr-Rdd5a7YUGaJmacIdwQ&s" alt="Bryce canyon picture"/>
 
-        
+         <button  onclick="facts()">Fun Facts</button>
+            <div id="funfacts">
+                <img src="https://i0.wp.com/www.brycecanyoncountry.com/wp-content/uploads/winter_2823adj.webp?fit=2100%2C1400&ssl=1">
+                <ul>
+                    <li>"Winter is one of the best times to visit"</li>
+                    <li>"Home to the worlds largest collection of hoodoos"</li>
+                    <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7WQTDTYbMGXzmGRXlyVFcPMcjUarPa4TMQQ&s" alt="Bryce canyon hoodoos"></li>
+                    <li>"Bryce canyon isn't actually a canyon despite the tame."</li>
+                    <li></li>
+                </ul> 
+            </div>
     </body>
 
 </html>
