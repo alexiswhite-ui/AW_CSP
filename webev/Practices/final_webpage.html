@@ -27,7 +27,7 @@
                 grid-template-columns: 200px 1fr;
                 grid-template-rows: auto; /* Items stack vertically */
                 gap: 20px;
-}
+            }
             #links{
                 color: whitesmoke;
                 font-style: underline;
@@ -40,11 +40,29 @@
                 background-color: black;
                 color: whitesmoke;
                 width: 200px;
-
-                
                 justify-self: left;
-                
-                
+                padding: 20px;
+            }
+
+            .sidebar-topic {
+                margin: 15px 0;
+                padding: 10px;
+                border-bottom: 1px solid whitesmoke;
+            }
+
+            .sidebar-topic:last-child {
+                border-bottom: none;
+            }
+
+            .sidebar-topic a {
+                color: whitesmoke;
+                text-decoration: underline;
+                font-size: large;
+                display: block;
+            }
+
+            .sidebar-topic a:hover {
+                color: rgb(180, 121, 79);
             }
 
         </style>
@@ -61,7 +79,7 @@
             }
 
             let count = 0
-            let imgs = ["https://www.visitutah.com/azure/cmsroot/visitutah/media/site-assets/homepage-hero/dark-sky_south_bryce-canyon_thors-hammer_zajac-marcin_2023_bryc_lr.jpg?w=900&h=600&mode=crop&quality=65", "https://www.google.com/imgres?q=bryce%20canyon&imgurl=https%3A%2F%2Fwww.visitutah.com%2Fazure%2Fcmsroot%2Fvisitutah%2Fmedia%2Fsite-assets%2Fhomepage-hero%2Fdark-sky_south_bryce-canyon_thors-hammer_zajac-marcin_2023_bryc_lr.jpg%3Fw%3D900%26h%3D600%26mode%3Dcrop%26quality%3D65&imgrefurl=https%3A%2F%2Fwww.visitutah.com%2Fplaces-to-go%2Fparks-outdoors%2Fbryce-canyon&docid=pkoHkmtPF6ncPM&tbnid=iv1MqYbflxjWkM&vet=12ahUKEwimlszxtZaUAxWUJ0QIHbh9K4kQnPAOegQIaxAB..i&w=900&h=600&hcb=2&ved=2ahUKEwimlszxtZaUAxWUJ0QIHbh9K4kQnPAOegQIaxAB&safe=active&ssui=on", "https://www.google.com/imgres?q=bryce%20canyon&imgurl=https%3A%2F%2Fsweetours.com%2Fwp-content%2Fuploads%2F2025%2F06%2Fbryce-canyon-sunrise-hoodoos-sunrise-point.png&imgrefurl=https%3A%2F%2Fsweetours.com%2Fbryce-canyon-sunrise-sunset-photography-guide%2F&docid=s74sgatNqyGeUM&tbnid=HkYrZU7qadETGM&vet=12ahUKEwimlszxtZaUAxWUJ0QIHbh9K4kQnPAOegQIMRAB..i&w=1408&h=768&hcb=2&ved=2ahUKEwimlszxtZaUAxWUJ0QIHbh9K4kQnPAOegQIMRAB&safe=active&ssui=on"]
+            let imgs = ["https://www.visitutah.com/azure/cmsroot/visitutah/media/site-assets/homepage-hero/dark-sky_south_bryce-canyon_thors-hammer_zajac-marcin_2023_bryc_lr.jpg?w=900&h=600&mode=crop&quality=65", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHzGWAh2WHsaiNzAr-Rdd5a7YUGaJmacIdwQ&s", "https://i0.wp.com/www.brycecanyoncountry.com/wp-content/uploads/winter_2823adj.webp?fit=2100%2C1400&ssl=1"]
             let img_count = 0
             function change(original){
                 if (img_count >= imgs.length -1){
@@ -79,25 +97,48 @@
         <div class="opening">
             <h1>Welcome to <b>UTAH</b></h1>
                 <h2>Bryce Canyon</h2>
-                    <h3><b>Utah is filled with many great delights to see! A place that is most definently worth your visit is <u>Bryce Canyone Nationla park</u>. Going through Utah brings glorious veiws around every corner, these veiws can be even greater in some particular places if you truly look.</b></h3>
+                    <h3><b>Utah is filled with many great delights to see! A place that is most definently worth your visit is <u>Bryce Canyon National park</u>. Going through Utah brings glorious views around every corner, these views can be even greater in some particular places if you truly look.</b></h3>
                 <br>
                 <br>
         </div>
 
         <div id="align">
-            <br><br>
             <div class="bar">
-                <a href= "https://www.nps.gov/brca/planyourvisit/permitsandreservations.htm" target="_blank" id="links">Booking</a>
+                <div class="sidebar-topic">
+                    <a href="https://www.nps.gov/brca/planyourvisit/permitsandreservations.htm" target="_blank" id="links">Booking</a>
+                </div>
+                <div class="sidebar-topic">
+                    <a href="https://www.nps.gov/brca/planyourvisit/hours.htm" target="_blank" id="links">Hours & Fees</a>
+                </div>
+                <div class="sidebar-topic">
+                    <a href="https://www.nps.gov/brca/planyourvisit/trails.htm" target="_blank" id="links">Trails</a>
+                </div>
+                <div class="sidebar-topic">
+                    <a href="https://www.nps.gov/brca/planyourvisit/campgrounds.htm" target="_blank" id="links">Camping</a>
+                </div>
+                <div class="sidebar-topic">
+                    <a href="https://www.nps.gov/brca/planyourvisit/visitor-centers.htm" target="_blank" id="links">Visitor Center</a>
+                </div>
+                <div class="sidebar-topic">
+                    <a href="https://www.nps.gov/brca/learn/nature.htm" target="_blank" id="links">Wildlife</a>
+                </div>
+                <div class="sidebar-topic">
+                    <a href="https://www.nps.gov/brca/planyourvisit/weather.htm" target="_blank" id="links">Weather</a>
+                </div>
             </div>
-            <div class="middle">
-                <h2><u>Introduction</u></h2>
-                <p>Out of the many national parks that are within the state of Utah, one that is very commonly known for good reason is <b>Bryce National Park</b>.</p>
 
-            </div>
-            <br><br>
-            <div class="middle">
-                <h2><u>Family Fun</u></h2>
-
+            <div>
+                <div class="middle">
+                    <h2><u>Introduction</u></h2>
+                    <p>Out of the many national parks that are within the state of Utah, one that is very commonly known for good reason is <b>Bryce National Park</b>. This atraction brings in millions of tourist every year to see such great atraction </p>
+                </div>
+                <div class="middle">
+                    <h2><u>Family Fun</u></h2>
+                    <p>Bryce Canyon offers activities for the whole family!</p>
+                </div>
+                <div class="middle">
+                    
+                </div>
             </div>
         </div>
 
@@ -109,9 +150,8 @@
                 <ul>
                     <li>"Winter is one of the best times to visit"</li>
                     <li>"Home to the worlds largest collection of hoodoos"</li>
-                    <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7WQTDTYbMGXzmGRXlyVFcPMcjUarPa4TMQQ&s" alt="Bryce canyon hoodoos"></li>
-                    <li>"Bryce canyon isn't actually a canyon despite the tame."</li>
-                    <li></li>
+                     <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7WQTDTYbMGXzmGRXlyVFcPMcjUarPa4TMQQ&s" alt="Bryce canyon hoodoos"></li>
+                    <li>"Bryce canyon isn't actually a canyon despite the name."</li>
                 </ul> 
             </div>
     </body>
